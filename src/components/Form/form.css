@@ -1,0 +1,111 @@
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px
+}
+.comp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.comp>div:first-child{
+    flex-basis: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.comp>div>img{
+    margin-right: 10px;
+}
+.comp>div:nth-child(2){
+    flex-basis: 100%;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 70%;
+    padding: 5px;
+    /* border: 1px solid black; */
+    margin-top: 2em;
+}
+.header{
+    flex-basis: 100%;
+}
+.header>h3{
+    text-align: left;
+    border-bottom: 2px solid red;
+    padding: 10px;
+}
+.fields{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+.fields>div{
+    text-align: left;
+    flex-basis: 100%;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: 500;
+}
+.complaint{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+.complaint>div{
+    /* border: 1px solid black; */
+    flex-basis: 100%;    
+}
+.complaint>div:first-child{
+    background-color: #3f5cb5;
+    color: aliceblue;
+    padding: 15px;
+}
+.form-fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text-field{
+    width: 80%;
+    max-width: 500px;
+}
+.form-fields>div:first-child{
+    /* border: 1px solid yellow; */
+    align-self: center;
+    font-weight: bold;
+    font-size: large;
+    color: grey;
+    /* flex-grow: 1; */
+    width: 250px;
+}
+.form-fields>div:nth-child(2){
+    text-align: left;
+    align-self: center;
+    flex-grow: 4;
+}
+.form-btn{
+    margin: 10px;
+}
+@media(max-width: 730px){
+    .form-fields>div:nth-child(2){
+        text-align: center;
+        flex-basis: 100%;
+    }   
+    .form-fields>div:first-child{
+        padding: 10px;
+        color: black;
+    }
+}

@@ -1,0 +1,121 @@
+.complaint-status{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 10px
+}
+.heading{
+    width: 80%;
+    /* border: 1px solid black; */
+}
+.heading>div:first-child{
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.heading>div>img{
+    margin-right: 10px;
+}
+.heading>div:nth-child(4){
+    margin-top: 5em;
+}
+.search-complain{
+    /* border: 1px solid black; */
+    margin-top: 5px;
+}
+.Input {
+    width: 100%;
+    max-width: 500px;
+}
+.expand-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    /* border: 1px solid black; */
+}
+.expand-details>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    /* flex-grow: 1; flex grow 1 kr dena ha media ma  */
+    /* border: 1px solid yellow; */
+}
+.expand-details>div>div:nth-child(odd){
+    font-weight: 600;
+    font-size: medium;
+    flex-basis: 49%;
+    padding: 10px 0px;
+    align-self: center;
+    /* border: 1px solid black; */
+}
+.expand-details>div>div:nth-child(even){
+    font-weight: 600;
+    color: grey;
+    flex-basis: 49%;
+    padding: 10px 0px;
+    align-self: center;
+    font-size: small;
+    /* border: 1px solid black; */
+}
+.incident-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    /* border: 1px solid black; */
+}
+.incident-details>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    /* flex-grow: 1; flex grow 1 kr dena ha media ma  */
+    /* border: 1px solid yellow; */
+}
+.incident-details>div>div:first-child{
+    font-weight: 600;
+    font-size: medium;
+    flex-basis: 100%;
+    padding: 10px 0px;
+    align-self: center;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+.incident-details>div>div:nth-child(2){
+    font-weight: 600;
+    color: grey;
+    flex-basis: 100%;
+    padding: 10px 0px;
+    align-self: center;
+    font-size: medium;
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+.panel-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+.panel-footer>div:nth-child(1){
+    align-self: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+}
+@media(max-width: 930px){
+    .expand-details>div{
+        flex-basis: 100%;
+    }
+    .expand-details>div:last-child{
+        align-self: center;
+    }
+    .ComplaintStatus-column-6{
+        flex-basis: 44.33% !important;
+    }
+}

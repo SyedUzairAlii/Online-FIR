@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* color: white ; */
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-basis: 100%;
+    background-color: grey;
+}
+.container h1{
+    border: 1px solid red;
+    flex-grow: 1;    
+}
+.container div{
+    border: 1px solid red;
+    margin: 2em;
+    border-right: none;
+    flex-grow: 2;
+}
+.container h3{
+    border: 1px solid red;
+    margin: 2em;
+    border-left: none;
+    flex-grow: 2;
+}
+.container2{
+    /* color: white ; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background-color: grey;
+}
+.container2 h1{
+    border: 1px solid red;
+    flex-basis: 55%;
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 17vw;
+}
+.container2 div{
+    border: 1px solid red;
+    margin: 2em;
+    flex-grow: 1;
+}
+.icon2 button{
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+}
+.icon2 button:hover{
+    cursor: pointer;
+    background-color: #dcd0d094;
+}
+@media (max-width: 680px) {
+    .container{
+        display: flex;
+    }
+    .container2{
+        display: none;
+    }
+    .container h1{
+        flex-basis: 100%;
+    }
+    .container div{
+        /* flex-basis: 50%; */
+        margin: 0.5em 0em 0.5em 0.5em;
+        padding: 5px;
+        order: 1;
+    }
+    .container h3{
+        margin: 0.5em 0.5em 0.5em 0em;
+        padding: 5px;
+        order: 1;
+    }
+}
+.head{
+    /* color: white ; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-basis: 100%;
+    background-color: grey;
+}
+.head h1{
+    /* border: 1px solid red; */
+    flex-grow: 1;    
+}

@@ -1,0 +1,26 @@
+
+{
+  "name": "Online F.I.R",
+  "short_name": "F.I.R",
+
+  "dir": "ltr",
+
+  "lang": "en-US",
+
+  "orientation": "any",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "icon.png",
+  "description": "A highly scalable & plug-able, Progressive Web Application foundation with the best Developer Experience.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512"
+    }
+  ]
+}
